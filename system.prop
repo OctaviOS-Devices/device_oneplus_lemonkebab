@@ -73,6 +73,12 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
+# Octavi's props
+ro.octavi.maintainer=TheTablaster
+ro.octavi.display.pid=1572404
+ro.octavi.hw.cam=48MP,16MP,5MP,2MP:16MP 
+ro.octavi.hw.cpu=Snapdragon SM8250
+
 # OnePlus
 ro.vendor.product.manufacturer.db=OP_PHONE
 ro.vendor.product.device.db=OP_DEVICE
