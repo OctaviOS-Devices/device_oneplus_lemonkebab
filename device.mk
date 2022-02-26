@@ -22,7 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
-$(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
+$(call inherit-product, vendor/qcom/common/system/wfd/wfd-vendor.mk)
+$(call inherit-product, vendor/qcom/common/system/perf/perf-vendor.mk)
+$(call inherit-product, vendor/qcom/common/vendor/perf/perf-vendor.mk)
+$(call inherit-product, vendor/qcom/common/vendor/adreno/adreno-vendor.mk)
 
 # Gcam
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
@@ -502,10 +505,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service \
+    android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
 # QMI
